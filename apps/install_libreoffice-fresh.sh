@@ -19,7 +19,7 @@ set -e
 	echo "---------------------------"
 	tput sgr0
 
-sudo add-apt-repository ppa:libreoffice/libreoffice-7-0
+sudo add-apt-repository ppa:libreoffice/ppa
 
 	tput setaf 1
     echo "-----------------"
