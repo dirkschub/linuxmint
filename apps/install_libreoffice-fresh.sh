@@ -14,13 +14,15 @@ set -e
 #Add PPA Libreoffice-Fresh & Update Packages
 
 	tput setaf 1
-	echo "Add PPA Libreoffice-Fresh !"
+	echo "---------------------------"
+    echo "Add PPA Libreoffice-Fresh !"
 	echo "---------------------------"
 	tput sgr0
 
 sudo add-apt-repository ppa:libreoffice/libreoffice-7-0
 
 	tput setaf 1
+    echo "---------------------------"
 	echo "Update Packages !"
 	echo "-----------------"
 	tput sgr0
