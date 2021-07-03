@@ -22,7 +22,7 @@ set -e
 sudo add-apt-repository ppa:libreoffice/libreoffice-7-0
 
 	tput setaf 1
-    echo "---------------------------"
+    echo "-----------------"
 	echo "Update Packages !"
 	echo "-----------------"
 	tput sgr0
