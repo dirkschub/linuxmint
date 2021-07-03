@@ -44,6 +44,9 @@ package="libreoffice"
 	echo "################################################################"
 	tput sgr0
 
+echo "-----------------------------"
+echo "Install Libreoffice-Fresh !"
+echo "-----------------------------"
 sudo apt install --no-install-recommends $package -y
 
 
@@ -77,6 +80,7 @@ package="libreoffice-l10n-de"
 #----------------------------------------------------------------------------------
 
 #Install Libreoffice-locales
+echo "-----------------------------"
 echo "Install Libreoffice-locales !"
 echo "-----------------------------"
 
@@ -102,6 +106,7 @@ package="libreoffice-help-de"
 #----------------------------------------------------------------------------------
 
 #Install Libreoffice-help
+echo "-----------------------------"
 echo "Install Libreoffice-help !"
 echo "-----------------------------"
 
