@@ -16,14 +16,14 @@ set -e
 	tput setaf 1
 	echo "Add PPA Libreoffice-Fresh !"
 	echo "---------------------------"
-	tuput sgr0
+	tput sgr0
 
 sudo add-apt-repository ppa:libreoffice/libreoffice-7-0
 
 	tput setaf 1
 	echo "Update Packages !"
 	echo "-----------------"
-	tuput sgr0
+	tput sgr0
 
 sudo apt update
 
@@ -47,7 +47,7 @@ package="libreoffice"
 sudo apt install --no-install-recommends $package -y
 
 
-fi
+#----------------------------------------------------------------------------------
 
 # Just checking if installation was successful
 if which $package &> /dev/null; then
@@ -90,26 +90,8 @@ echo "-----------------------------"
 sudo apt install --no-install-recommends $package -y
 
 
-fi
+#-----------------------------------------------------------------------------------
 
-# Just checking if installation was successful
-if which $package &> /dev/null; then
-
-	tput setaf 2
-	echo "################################################################"
-	echo "#########  Checking ..."$package" has been installed"
-	echo "################################################################"
-	tput sgr0
-
-else
-
-	tput setaf 1
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!!!!!!!  "$package" has NOT been installed"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	tput sgr0
-
-fi
 
 #----------------------------------------------------------------------------------
 
@@ -133,23 +115,5 @@ echo "-----------------------------"
 sudo apt install --no-install-recommends $package -y
 
 
-fi
+#----------------------------------------------------------------------------------
 
-# Just checking if installation was successful
-if which $package &> /dev/null; then
-
-	tput setaf 2
-	echo "################################################################"
-	echo "#########  Checking ..."$package" has been installed"
-	echo "################################################################"
-	tput sgr0
-
-else
-
-	tput setaf 1
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!!!!!!!  "$package" has NOT been installed"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	tput sgr0
-
-fi
